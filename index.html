@@ -12,6 +12,9 @@
 <script>
  function hello() {  
     if(/Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && !/OPR/.test(navigator.userAgent)){ 
+   }else if(/CriOS/i.test(navigator.userAgent) && /iphone|ipod|ipad/i.test(navigator.userAgent)){
+      window.alert('not using chrome');
+    window.location.href='https://www.hireplace.com/'
    }
    else  {
     window.alert('not using chrome');
